@@ -3,7 +3,10 @@ def main():
     text = get_book_text(book_path)
     word_count = get_word_count(text)
     letter_count = get_letter_count(text)
+    print(f"--- Book Statistics of {book_path} ---")
+    print(f"Word count: {word_count}")
     print(f"Letter count: {letter_count}")
+    print("--- End of Book Statistics ---")
 
 
 def get_book_text(path):
@@ -14,9 +17,6 @@ def get_word_count(text):
     return len(text.split())
 
 def get_letter_count(text):
-    # TODO: Split each word into letters and count them
-    # TODO: Make each letter lowercase
-    # TODO: Return the total count of letters in a dictionary
     letter_dict = {}
     
     for letter in text:
