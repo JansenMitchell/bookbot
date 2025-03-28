@@ -1,5 +1,5 @@
 # bookbot
-BookBot is my first boot.dev project!
+BookBot is my first [Boot.dev](https://www.boot.dev) project!
 
 ## Description
 BookBot is a simple Python project that processes text files from the `books` directory.
