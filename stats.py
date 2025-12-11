@@ -15,3 +15,15 @@ def count_characters(book_text):
         else:
             characters[character] = 1
     return characters
+
+
+def sort_on(items):
+    return items["num"]
+
+
+def sort_dict_list(characters):
+    dict_list = []
+    for char, count in characters.items():
+        dict_list.append({"char": char, "num": count})
+    dict_list.sort(key=sort_on, reverse=True)
+    return dict_list
